@@ -1,4 +1,4 @@
-//but : déterminer si le nombre netier donnée par l'utilisatuer est pair ou impair
+//FR : but : dÃ©terminer si le nombre netier donnÃ©e par l'utilisatuer est pair ou impair
 //auteur : Patrice Dinelle
 //date:  2020-09-11
 
@@ -17,21 +17,22 @@ void main()
 	std::cout << "Veuillez entrer un nombre entier : ";
 	std::cin >> nombre1; // enregistrer le nombre
 
-
-	if (nombre1 % 2 == 0 ) // l'opération pour déterminer si le nombre est pair ou impair
+	// KM : Le commentaire doit expliquer pourquoi tu as recours Ã  %, puis 2, puis pourquoi le comparer Ã  0
+	if (nombre1 % 2 == 0 ) // l'opÃ©ration pour dÃ©terminer si le nombre est pair ou impair
 	{
-		std::cout << nombre1 << " est un nombre pair"; // la réponce si le nombre est pair
+		std::cout << nombre1 << " est un nombre pair"; // FR : la rÃ©ponce si le nombre est pair
 	}
 	else // si le nombre n'est pas pair
 	{
-		std::cout << nombre1 << " est un nombre impair"; // la réponce si le nombre est impair
+		std::cout << nombre1 << " est un nombre impair"; // FR : la rÃ©ponce si le nombre est impair
 	}
 }
 
 
 //plan de tests
+// KM : Excellent plan de tests. Il manque peut-Ãªtre 0 comme valeur.
 /*
-nombre1					résultats escompté
+nombre1					rÃ©sultats escomptÃ©
 2						est pair
 5						est impair	
 -1						est impair
