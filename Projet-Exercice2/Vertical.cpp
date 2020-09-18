@@ -1,4 +1,4 @@
-// but : dÈterminer si le nombre a bien 5 chiffres si oui, l'Ècrir en colone vertical
+// FR : but : d√©terminer si le nombre a bien 5 chiffres si oui, l'√©crir en colone vertical
 // auteur : Patrice Dinelle
 // date : 2020-09-11
 
@@ -14,7 +14,7 @@ void main()
 	int nombre;
 	int chiffre1;  //	>
 	int chiffre2;  //		>
-	int chiffre3;  //			>  les variables pour afficher les chiffres en colone 
+	int chiffre3;  //			>  FR : les variables pour afficher les chiffres en colone 
 	int chiffre4;  //		>
 	int chiffre5;  //	>
 
@@ -22,9 +22,12 @@ void main()
 	std::cout << "Veuillez entrer un nombre a 5 chiffres ";
 	std::cin >> nombre; // enregistrer le nombre
 
-
+	// KM : Tr√®s bien comme condition ...
 	if ( nombre > 9999 )
 	{
+		// KM ... il en faudrait une autre ici pour que le nombre ne d√©passe pas 6 chiffres 
+		
+		// KM : Manque de commentaire
 		chiffre1 = nombre / 10000;
 		chiffre2 = nombre / 1000 % 10;
 		chiffre3 = nombre / 100 % 10;
@@ -43,8 +46,9 @@ void main()
 
 }
 //plans test
+// KM : Plan de test parfait
 /*
-nombre			 rÈsultats escomptÈ
+nombre			 r√©sultats escompt√©
 12345			1
 				2
 				3
